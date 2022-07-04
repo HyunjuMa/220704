@@ -3,9 +3,9 @@ kind: Pod
 metadata:
   name: pod2-page2
 spec:
+  nodeName: k8s-worker3
   containers:
   - name: nginx
     image: nginx:1.14.0
     ports:
     - containerPort: 8082
-    nodeName: k8s-worker3

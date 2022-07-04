@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lb-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: hp-svc
+            port:
+              number: 8080
+      - path: /page2
+        pathType: Prefix
+        backend:
+          service:
+            name: p2-svc
+            port:
+              number: 8080
+      - path: /page3
+        pathType: Prefix
+        backend:
+          service:
+            name: p3-svc
+            port:
+              number: 8080

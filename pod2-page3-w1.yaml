@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pod2-page3
+  labels:
+    app: p3-svc
 spec:
   nodeName: k8s-worker1
   containers:

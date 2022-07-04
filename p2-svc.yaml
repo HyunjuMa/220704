@@ -3,8 +3,8 @@ kind: Service
 metadata:
   name: p2-svc
 spec:
-  #selector:
-  #  app: svc
+  selector:
+    app: p2-svc
   ports:
   - port: 80
     targetPort: 8082

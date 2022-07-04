@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2-default
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.0
+    ports:
+    - containerPort: 80
+    nodeName: k8s-worker2

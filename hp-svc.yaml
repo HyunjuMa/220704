@@ -3,8 +3,8 @@ kind: Service
 metadata:
   name: hp-svc
 spec:
-  #selector:
-  #  app: svc
+  selector:
+    app: hp-svc
   ports:
   - port: 80
     targetPort: 8081

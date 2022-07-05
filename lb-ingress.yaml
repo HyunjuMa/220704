@@ -15,18 +15,18 @@ spec:
           service:
             name: hp-svc
             port:
-              number: 80
+              number: 8080
       - path: /page2
         pathType: Prefix
         backend:
           service:
             name: p2-svc
             port:
-              number: 80
+              number: 8080
       - path: /page3
         pathType: Prefix
         backend:
           service:
             name: p3-svc
             port:
-              number: 80
+              number: 8080

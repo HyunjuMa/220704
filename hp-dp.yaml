@@ -21,7 +21,7 @@ spec:
       - name: container
         image: ghcr.io/wsjang619/home
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:

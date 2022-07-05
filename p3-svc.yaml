@@ -6,5 +6,5 @@ spec:
   selector:
     app: p3-svc
   ports:
-  - port: 80
-    targetPort: 8083
+  - port: 8080
+    targetPort: 80
